@@ -1,7 +1,7 @@
-package org.example;
+package org.example.bucket;
 
-import java.io.IOException;
-import java.text.SimpleDateFormat;
+import org.example.Sorting;
+
 import java.util.*;
 
 /**
@@ -11,35 +11,10 @@ import java.util.*;
  * @version Id$.
  * @since 0.1.
  */
-public class Bucket_Sort {
+public class Bucket_Sort implements Sorting {
 
-    public static void main(String[] args) {
-
-        Report_Sorting reportSorting = new Report_Sorting();
-        long timeStart = System.currentTimeMillis();
-
-        int n = 100_000;
-
-        int[] arr = new Array_Creation().array(n);
-        System.out.printf("Source array: %s\n", Arrays.toString(arr));
-        int[] arrBucketSort = bucketSort(arr);
-        System.out.printf("Bucket sort: %s\n", Arrays.toString(arrBucketSort));
-        long timeFinish = System.currentTimeMillis();
-
-        Date dt = new Date(timeFinish - timeStart);
-        SimpleDateFormat sdf = new SimpleDateFormat("mm:ss:SS");
-        String resTime = sdf.format(dt);
-        System.out.printf("Time: %s", resTime);
-
-        try {
-            reportSorting.report("Bucket Sort: ", n, resTime);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
-
-    public static int[] bucketSort(int[] input) {
-
+    @Override
+    public int[] sort(int[] input) {
         // get hash codes
         final int[] code = hash(input);
 
