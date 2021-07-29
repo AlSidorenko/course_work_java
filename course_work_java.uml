@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>C:/Projects/JetBrains/IdeaProject/kpi_iasa/Algorithmization_And_Programming/course_work_java</OriginalElement>
+  <nodes>
+    <node x="0.0" y="274.0">org.example.radix.StartRadixSort</node>
+    <node x="316.0" y="106.0">org.example.bucket.Bucket_Sort</node>
+    <node x="194.0" y="274.0">org.example.Report_Sorting</node>
+    <node x="414.0" y="420.0">org.example.Array_Creation</node>
+    <node x="161.5" y="0.0">org.example.Sorting</node>
+    <node x="215.0" y="420.0">org.example.bucket.StartBucketSort</node>
+    <node x="151.0" y="128.0">org.example.count.Counting_Sort</node>
+    <node x="0.0" y="117.0">org.example.radix.Radix_Sort</node>
+    <node x="0.0" y="420.0">org.example.count.StartCountingSort</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.example.bucket.Bucket_Sort" target="org.example.Sorting" relationship="REALIZATION">
+      <point x="0.0" y="-61.5" />
+      <point x="386.5" y="81.0" />
+      <point x="223.5" y="81.0" />
+      <point x="0.0" y="28.0" />
+    </edge>
+    <edge source="org.example.radix.Radix_Sort" target="org.example.Sorting" relationship="REALIZATION">
+      <point x="0.0" y="-50.5" />
+      <point x="65.5" y="81.0" />
+      <point x="223.5" y="81.0" />
+      <point x="0.0" y="28.0" />
+    </edge>
+    <edge source="org.example.count.Counting_Sort" target="org.example.Sorting" relationship="REALIZATION">
+      <point x="0.0" y="-39.5" />
+      <point x="0.0" y="28.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.0" showDependencies="false" x="281.5" y="249.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
