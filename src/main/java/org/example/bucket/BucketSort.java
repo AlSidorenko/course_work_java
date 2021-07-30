@@ -11,7 +11,7 @@ import java.util.*;
  * @version Id$.
  * @since 0.1.
  */
-public class Bucket_Sort implements Sorting {
+public class BucketSort implements Sorting {
 
     @Override
     public int[] sort(int[] input) {

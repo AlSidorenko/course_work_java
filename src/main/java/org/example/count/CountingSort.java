@@ -11,7 +11,7 @@ import java.util.Arrays;
  * @version Id$.
  * @since 0.1.
  */
-public class Counting_Sort implements Sorting {
+public class CountingSort implements Sorting {
 
     @Override
     public int[] sort(int[] input) {

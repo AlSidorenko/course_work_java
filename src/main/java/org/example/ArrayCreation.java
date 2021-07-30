@@ -9,7 +9,7 @@ import java.util.Random;
  * @version Id$.
  * @since 0.1.
  */
-public class Array_Creation {
+public class ArrayCreation {
 
     public int[] array(int n) {
         int[] arrTemp = new int[n];
